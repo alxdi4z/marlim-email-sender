@@ -21,16 +21,14 @@ public class MarlimAccess implements Serializable {
     private String email;
     private boolean by_message;
     private boolean by_email;
-    private String number;
 
     public MarlimAccess() {
     }
     
-    public MarlimAccess(String email, boolean by_message, boolean by_email, String number) {
+    public MarlimAccess(String email, boolean by_message, boolean by_email) {
         this.email = email;
         this.by_message = by_message;
         this.by_email = by_email;
-        this.number = number;
     }
 
     public int getAcessos_id() {
@@ -65,14 +63,6 @@ public class MarlimAccess implements Serializable {
         this.by_email = by_email;
     }
 
-    public String getNumber() {
-        return number;
-    }
-
-    public void setNumber(String number) {
-        this.number = number;
-    }
-
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -81,7 +71,6 @@ public class MarlimAccess implements Serializable {
         result = prime * result + (by_email ? 1231 : 1237);
         result = prime * result + (by_message ? 1231 : 1237);
         result = prime * result + ((email == null) ? 0 : email.hashCode());
-        result = prime * result + ((number == null) ? 0 : number.hashCode());
         return result;
     }
 
@@ -104,11 +93,6 @@ public class MarlimAccess implements Serializable {
             if (other.email != null)
                 return false;
         } else if (!email.equals(other.email))
-            return false;
-        if (number == null) {
-            if (other.number != null)
-                return false;
-        } else if (!number.equals(other.number))
             return false;
         return true;
     }
