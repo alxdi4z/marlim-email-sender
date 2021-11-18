@@ -2,6 +2,7 @@ package com.marlim.marlim_email_sender.models;
 
 import java.io.Serial;
 import java.io.Serializable;
+import java.util.Objects;
 
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
@@ -18,15 +19,13 @@ public class MarlimAccess implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int acessos_id;
-    private String email;
     private boolean by_message;
     private boolean by_email;
 
     public MarlimAccess() {
     }
     
-    public MarlimAccess(String email, boolean by_message, boolean by_email) {
-        this.email = email;
+    public MarlimAccess(boolean by_message, boolean by_email) {
         this.by_message = by_message;
         this.by_email = by_email;
     }
@@ -35,63 +34,24 @@ public class MarlimAccess implements Serializable {
         return acessos_id;
     }
 
-    public void setAcessos_id(int acessos_id) {
-        this.acessos_id = acessos_id;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
     public boolean isBy_message() {
         return by_message;
-    }
-
-    public void setBy_message(boolean by_message) {
-        this.by_message = by_message;
     }
 
     public boolean isBy_email() {
         return by_email;
     }
 
-    public void setBy_email(boolean by_email) {
-        this.by_email = by_email;
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        MarlimAccess that = (MarlimAccess) o;
+        return getAcessos_id() == that.getAcessos_id() && isBy_message() == that.isBy_message() && isBy_email() == that.isBy_email();
     }
 
     @Override
     public int hashCode() {
-        final int prime = 31;
-        int result = 1;
-        result = prime * result + acessos_id;
-        result = prime * result + (by_email ? 1231 : 1237);
-        result = prime * result + (by_message ? 1231 : 1237);
-        result = prime * result + ((email == null) ? 0 : email.hashCode());
-        return result;
+        return Objects.hash(getAcessos_id(), isBy_message(), isBy_email());
     }
-
-    @Override
-    public boolean equals(Object obj) {
-        if (this == obj)
-            return true;
-        if (obj == null)
-            return false;
-        if (getClass() != obj.getClass())
-            return false;
-        MarlimAccess other = (MarlimAccess) obj;
-        if (acessos_id != other.acessos_id)
-            return false;
-        if (by_email != other.by_email)
-            return false;
-        if (by_message != other.by_message)
-            return false;
-        if (email == null) {
-            return other.email == null;
-        } else return email.equals(other.email);
-    }
-
 }
