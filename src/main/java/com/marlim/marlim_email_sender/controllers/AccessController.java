@@ -40,7 +40,7 @@ public class AccessController {
 
     @PostMapping(path = "/sendemail")
     public ResponseEntity<?> sendEmail(@RequestBody EmailTemplate emailTemplate) {
-        if (emailTemplate.isOffer()) emailTemplate.setText(EmailTextTemplates.clickable);
+        if (emailTemplate.isOffer()) emailTemplate.setText(EmailTextTemplates.clickable2);
         try {
             if (emailTemplate.getSubject().isEmpty()) return ResponseEntity.badRequest().body("Empty subject");
             if (emailTemplate.getText().isEmpty()) return ResponseEntity.badRequest().body("Empty message");
