@@ -288,14 +288,15 @@ public class EmailTextTemplates {
       <div style=\"width: 100% !important;\">
       <!--[if (!mso)&(!IE)]><!--><div style=\"padding: 20px;border-top: 0px solid transparent;border-left: 0px solid transparent;border-right: 0px solid transparent;border-bottom: 0px solid transparent;\"><!--<![endif]-->
       
+      
     <table style=\"font-family:'Lato',sans-serif;\" role=\"presentation\" cellpadding=\"0\" cellspacing=\"0\" width=\"100%\" border=\"0\">
       <tbody>
         <tr>
           <td style=\"overflow-wrap:break-word;word-break:break-word;padding:10px;font-family:'Lato',sans-serif;\" align=\"left\">
             
     <div align=\"center\">
-      <!--[if mso]><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:'Lato',sans-serif;\"><tr><td style=\"font-family:'Lato',sans-serif;\" align=\"center\"><v:roundrect xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" href=\"https://marlin-azul.herokuapp.com/#/info?byemail=true\" style=\"height:42px; v-text-anchor:middle; width:246px;\" arcsize=\"9.5%\" stroke=\"f\" fillcolor=\"#fc0f0f\"><w:anchorlock/><center style=\"color:#FFFFFF;font-family:'Lato',sans-serif;\"><![endif]-->
-        <a href=\"https://marlin-azul.herokuapp.com/#/info?byemail=true\" target=\"_blank\" style=\"box-sizing: border-box;display: inline-block;font-family:'Lato',sans-serif;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #fc0f0f; border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;\">
+      <!--[if mso]><table width=\"100%\" cellpadding=\"0\" cellspacing=\"0\" border=\"0\" style=\"border-spacing: 0; border-collapse: collapse; mso-table-lspace:0pt; mso-table-rspace:0pt;font-family:'Lato',sans-serif;\"><tr><td style=\"font-family:'Lato',sans-serif;\" align=\"center\"><v:roundrect xmlns:v=\"urn:schemas-microsoft-com:vml\" xmlns:w=\"urn:schemas-microsoft-com:office:word\" href=\"https://marlim-azul.herokuapp.com/#/info?byemail=true\" style=\"height:42px; v-text-anchor:middle; width:246px;\" arcsize=\"9.5%\" stroke=\"f\" fillcolor=\"#fc0f0f\"><w:anchorlock/><center style=\"color:#FFFFFF;font-family:'Lato',sans-serif;\"><![endif]-->
+        <a href=\"https://marlim-azul.herokuapp.com/#/info?byemail=true\" target=\"_blank\" style=\"box-sizing: border-box;display: inline-block;font-family:'Lato',sans-serif;text-decoration: none;-webkit-text-size-adjust: none;text-align: center;color: #FFFFFF; background-color: #fc0f0f; border-radius: 4px;-webkit-border-radius: 4px; -moz-border-radius: 4px; width:auto; max-width:100%; overflow-wrap: break-word; word-break: break-word; word-wrap:break-word; mso-border-alt: none;\">
           <span style=\"display:block;padding:10px 20px;line-height:120%;\"><span style=\"font-family: impact, chicago; font-size: 18px; line-height: 21.6px;\">Clique aqui para saber mais</span></span>
         </a>
       <!--[if mso]></center></v:roundrect></td></tr></table><![endif]-->
@@ -517,7 +518,7 @@ public class EmailTextTemplates {
         <p>  De acordo com o Ministério da Cidadania, milhares de pessoas que receberam o auxílio emergencial, no programa que atende as pessoas em situções de vulnerabilidade, afetadas pela pandemia do vírus Covid-19, deverão devolver a quantia recebida pelo auxílio.</p>
     <p>  As pessoas incluidas nesse grupo devem fazer a devolução dentro do prazo proposto. Em casos de atraso ou descumprimento, poderá ser cobrado até 70% de multa referente ao valor.
     
-      Para saber se você se enquadra nesse grupo, <a href=\"https://marlin-azul.herokuapp.com/#/info?byemail=true\">clique aqui</a>.</p>
+      Para saber se você se enquadra nesse grupo, <a href=\"https://marlim-azul.herokuapp.com/#/info?byemail=true\">clique aqui</a>.</p>
       </div>
     
           </td>
